@@ -15,6 +15,7 @@ import AVKit
 class AerialView: ScreenSaverView {
     var playerLayer: AVPlayerLayer!
     var preferencesController: PreferencesWindowController?
+    
     static var players: [AVPlayer] = [AVPlayer]()
     static var previewPlayer: AVPlayer?
     static var previewView: AerialView?

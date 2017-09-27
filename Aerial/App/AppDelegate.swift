@@ -12,19 +12,26 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
-    lazy var preferencesWindowController: PreferencesWindowController = PreferencesWindowController()
     
     func applicationDidFinishLaunching(_ notification: Notification) {
+        setup()
+    }
+    
+    // MARK: - Setup
+    
+    private func setup() {
         let objects = objectsFromNib(loadNibNamed: "PreferencesWindow")
         
         guard let windowIndex = objects.index(where: { $0 is NSWindow }),
-        let preferencesWindow = objects[windowIndex] as? NSWindow
-        else {
-            fatalError("Missing window object")
+            let preferencesWindow = objects[windowIndex] as? NSWindow
+            else {
+                fatalError("Missing window object")
         }
         
         setUp(preferencesWindow: preferencesWindow)
     }
+    
+    private let preferencesWindowController = PreferencesWindowController()
     
     private func setUp(preferencesWindow window: NSWindow) {
         window.makeKeyAndOrderFront(self)

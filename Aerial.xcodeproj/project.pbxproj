@@ -17,6 +17,18 @@
 		FA7199711D94EC5A00FBC99B /* PreferencesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7199701D94EC5A00FBC99B /* PreferencesTests.swift */; };
 		FAB22A7E1BE17D7D0065C0F5 /* AssetLoaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB22A7D1BE17D7D0065C0F5 /* AssetLoaderDelegate.swift */; };
 		FAB22A7F1BE17D7D0065C0F5 /* AssetLoaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB22A7D1BE17D7D0065C0F5 /* AssetLoaderDelegate.swift */; };
+		FAB782541F6C809800D79311 /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB782531F6C809800D79311 /* PlayerManager.swift */; };
+		FAB782551F6C809800D79311 /* PlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB782531F6C809800D79311 /* PlayerManager.swift */; };
+		FAB7825A1F6C815E00D79311 /* AerialPlayerAVKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB782591F6C815E00D79311 /* AerialPlayerAVKit.swift */; };
+		FAB7825B1F6C815E00D79311 /* AerialPlayerAVKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB782591F6C815E00D79311 /* AerialPlayerAVKit.swift */; };
+		FABF7DF51F7B103E00227328 /* ManifestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABF7DF41F7B103E00227328 /* ManifestManager.swift */; };
+		FABF7DF61F7B103E00227328 /* ManifestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABF7DF41F7B103E00227328 /* ManifestManager.swift */; };
+		FABF7DF81F7B10C900227328 /* VideosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABF7DF71F7B10C900227328 /* VideosManager.swift */; };
+		FABF7DF91F7B10C900227328 /* VideosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABF7DF71F7B10C900227328 /* VideosManager.swift */; };
+		FABF7DFD1F7B1A8900227328 /* TimeOfDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABF7DFC1F7B1A8900227328 /* TimeOfDay.swift */; };
+		FABF7DFE1F7B1A8900227328 /* TimeOfDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABF7DFC1F7B1A8900227328 /* TimeOfDay.swift */; };
+		FABF7E001F7B1A9E00227328 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABF7DFF1F7B1A9E00227328 /* City.swift */; };
+		FABF7E011F7B1A9E00227328 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABF7DFF1F7B1A9E00227328 /* City.swift */; };
 		FAC36F481BE1756D007F2A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC36F321BE1756D007F2A20 /* Assets.xcassets */; };
 		FAC36F4A1BE1756D007F2A20 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC36F331BE1756D007F2A20 /* MainMenu.xib */; };
 		FAC36F4D1BE1756D007F2A20 /* icon-day.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FAC36F371BE1756D007F2A20 /* icon-day.pdf */; };
@@ -68,13 +80,19 @@
 		EF3721B4B4C5B6ED3EBED5A5 /* Pods-AerialApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerialApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AerialApp/Pods-AerialApp.release.xcconfig"; sourceTree = "<group>"; };
 		FA143CD61BDA3E880041A82B /* AerialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AerialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA143CE51BDA3EEF0041A82B /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
-		FA36BD3E1BE57F8E00D5E03B /* VideoDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = VideoDownload.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FA36BD3E1BE57F8E00D5E03B /* VideoDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = VideoDownload.swift; path = ../Models/Cache/VideoDownload.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FA3E6DB01F6A87E6007CBD34 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
-		FA6F81DB1D939455007975FE /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		FA6F81DB1D939455007975FE /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Preferences.swift; path = ../Controllers/Preferences.swift; sourceTree = "<group>"; };
 		FA71996E1D94EC5A00FBC99B /* Aerial Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aerial Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7199701D94EC5A00FBC99B /* PreferencesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesTests.swift; sourceTree = "<group>"; };
 		FA7199721D94EC5A00FBC99B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAB22A7D1BE17D7D0065C0F5 /* AssetLoaderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AssetLoaderDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FAB22A7D1BE17D7D0065C0F5 /* AssetLoaderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = AssetLoaderDelegate.swift; path = ../Models/Cache/AssetLoaderDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FAB782531F6C809800D79311 /* PlayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerManager.swift; sourceTree = "<group>"; };
+		FAB782591F6C815E00D79311 /* AerialPlayerAVKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AerialPlayerAVKit.swift; sourceTree = "<group>"; };
+		FABF7DF41F7B103E00227328 /* ManifestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManifestManager.swift; sourceTree = "<group>"; };
+		FABF7DF71F7B10C900227328 /* VideosManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosManager.swift; sourceTree = "<group>"; };
+		FABF7DFC1F7B1A8900227328 /* TimeOfDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeOfDay.swift; sourceTree = "<group>"; };
+		FABF7DFF1F7B1A9E00227328 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		FAC36F301BE1756D007F2A20 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FAC36F321BE1756D007F2A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC36F341BE1756D007F2A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -84,7 +102,7 @@
 		FAC36F391BE1756D007F2A20 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC36F3A1BE1756D007F2A20 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
 		FAC36F3B1BE1756D007F2A20 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
-		FAC36F3E1BE1756D007F2A20 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PreferencesWindowController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FAC36F3E1BE1756D007F2A20 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = PreferencesWindowController.swift; path = ../Controllers/PreferencesWindowController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FAC36F401BE1756D007F2A20 /* AerialVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AerialVideo.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FAC36F431BE1756D007F2A20 /* AerialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AerialView.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FAC36F441BE1756D007F2A20 /* CheckCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = CheckCellView.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -92,8 +110,8 @@
 		FAC36F661BE1778C007F2A20 /* ManifestLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ManifestLoader.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FAC36F691BE1780B007F2A20 /* Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Debug.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FACAF1A51BD9FC6000E539DC /* Aerial.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Aerial.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAF450201BE2B45D00C1F98A /* VideoLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = VideoLoader.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		FAF450231BE2D2FD00C1F98A /* VideoCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = VideoCache.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FAF450201BE2B45D00C1F98A /* VideoLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = VideoLoader.swift; path = ../Models/Cache/VideoLoader.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FAF450231BE2D2FD00C1F98A /* VideoCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = VideoCache.swift; path = ../Models/Cache/VideoCache.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +188,64 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		FAB782501F6C7EFE00D79311 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				FAF450201BE2B45D00C1F98A /* VideoLoader.swift */,
+			);
+			name = Loading;
+			path = ../Loading;
+			sourceTree = "<group>";
+		};
+		FAB782511F6C7FE200D79311 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				FABF7DF71F7B10C900227328 /* VideosManager.swift */,
+				FA36BD3E1BE57F8E00D5E03B /* VideoDownload.swift */,
+				FAF450231BE2D2FD00C1F98A /* VideoCache.swift */,
+				FAB22A7D1BE17D7D0065C0F5 /* AssetLoaderDelegate.swift */,
+				FAB782501F6C7EFE00D79311 /* Loading */,
+			);
+			name = Videos;
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FAB782521F6C807500D79311 /* Players */ = {
+			isa = PBXGroup;
+			children = (
+				FAB782531F6C809800D79311 /* PlayerManager.swift */,
+				FAB782591F6C815E00D79311 /* AerialPlayerAVKit.swift */,
+			);
+			path = Players;
+			sourceTree = "<group>";
+		};
+		FABF7DF31F7B102800227328 /* Manifests */ = {
+			isa = PBXGroup;
+			children = (
+				FABF7DF41F7B103E00227328 /* ManifestManager.swift */,
+			);
+			path = Manifests;
+			sourceTree = "<group>";
+		};
+		FABF7DFA1F7B1A5E00227328 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				FABF7DFB1F7B1A7B00227328 /* Models */,
+				FAC36F3E1BE1756D007F2A20 /* PreferencesWindowController.swift */,
+				FA6F81DB1D939455007975FE /* Preferences.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		FABF7DFB1F7B1A7B00227328 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FABF7DFC1F7B1A8900227328 /* TimeOfDay.swift */,
+				FABF7DFF1F7B1A9E00227328 /* City.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		FAC36F2F1BE1756D007F2A20 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,23 +282,17 @@
 		FAC36F3C1BE1756D007F2A20 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				FABF7DFA1F7B1A5E00227328 /* Preferences */,
+				FABF7DF31F7B102800227328 /* Manifests */,
+				FAB782521F6C807500D79311 /* Players */,
+				FAB782511F6C7FE200D79311 /* Videos */,
 				FA3E6DAF1F6A87DA007CBD34 /* Headers */,
 				FA6F81DA1D935F22007975FE /* Constants */,
-				FAC36F3D1BE1756D007F2A20 /* Controllers */,
 				FAC36F3F1BE1756D007F2A20 /* Models */,
 				FAC36F421BE1756D007F2A20 /* Views */,
 			);
 			name = Source;
 			path = Aerial/Source;
-			sourceTree = "<group>";
-		};
-		FAC36F3D1BE1756D007F2A20 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				FAC36F3E1BE1756D007F2A20 /* PreferencesWindowController.swift */,
-				FA6F81DB1D939455007975FE /* Preferences.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		FAC36F3F1BE1756D007F2A20 /* Models */ = {
@@ -240,10 +310,6 @@
 		FAC36F411BE1756D007F2A20 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
-				FAB22A7D1BE17D7D0065C0F5 /* AssetLoaderDelegate.swift */,
-				FAF450201BE2B45D00C1F98A /* VideoLoader.swift */,
-				FAF450231BE2D2FD00C1F98A /* VideoCache.swift */,
-				FA36BD3E1BE57F8E00D5E03B /* VideoDownload.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -544,18 +610,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABF7DFE1F7B1A8900227328 /* TimeOfDay.swift in Sources */,
 				FAC36F651BE1772F007F2A20 /* CollectionType+Shuffling.swift in Sources */,
 				FAC36F5E1BE1756D007F2A20 /* CheckCellView.swift in Sources */,
+				FABF7DF61F7B103E00227328 /* ManifestManager.swift in Sources */,
 				FAC36F5C1BE1756D007F2A20 /* AerialView.swift in Sources */,
 				FAC36F681BE1778C007F2A20 /* ManifestLoader.swift in Sources */,
 				FAC36F581BE1756D007F2A20 /* PreferencesWindowController.swift in Sources */,
 				FAC36F6B1BE1780B007F2A20 /* Debug.swift in Sources */,
 				FAB22A7F1BE17D7D0065C0F5 /* AssetLoaderDelegate.swift in Sources */,
+				FABF7DF91F7B10C900227328 /* VideosManager.swift in Sources */,
 				FAC36F601BE175CF007F2A20 /* AppDelegate.swift in Sources */,
 				FA36BD401BE57F8E00D5E03B /* VideoDownload.swift in Sources */,
 				FA6F81DD1D939455007975FE /* Preferences.swift in Sources */,
+				FAB782551F6C809800D79311 /* PlayerManager.swift in Sources */,
 				FAF450221BE2B45D00C1F98A /* VideoLoader.swift in Sources */,
+				FAB7825B1F6C815E00D79311 /* AerialPlayerAVKit.swift in Sources */,
 				FAC36F5A1BE1756D007F2A20 /* AerialVideo.swift in Sources */,
+				FABF7E011F7B1A9E00227328 /* City.swift in Sources */,
 				FAF450251BE2D2FD00C1F98A /* VideoCache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,12 +646,18 @@
 			files = (
 				FAC36F5D1BE1756D007F2A20 /* CheckCellView.swift in Sources */,
 				FAC36F5B1BE1756D007F2A20 /* AerialView.swift in Sources */,
+				FABF7E001F7B1A9E00227328 /* City.swift in Sources */,
+				FABF7DF51F7B103E00227328 /* ManifestManager.swift in Sources */,
+				FABF7DF81F7B10C900227328 /* VideosManager.swift in Sources */,
+				FABF7DFD1F7B1A8900227328 /* TimeOfDay.swift in Sources */,
+				FAB7825A1F6C815E00D79311 /* AerialPlayerAVKit.swift in Sources */,
 				FA6F81DC1D939455007975FE /* Preferences.swift in Sources */,
 				FAF450241BE2D2FD00C1F98A /* VideoCache.swift in Sources */,
 				FAC36F571BE1756D007F2A20 /* PreferencesWindowController.swift in Sources */,
 				FAC36F671BE1778C007F2A20 /* ManifestLoader.swift in Sources */,
 				FAC36F591BE1756D007F2A20 /* AerialVideo.swift in Sources */,
 				FAF450211BE2B45D00C1F98A /* VideoLoader.swift in Sources */,
+				FAB782541F6C809800D79311 /* PlayerManager.swift in Sources */,
 				FAC36F6A1BE1780B007F2A20 /* Debug.swift in Sources */,
 				FAB22A7E1BE17D7D0065C0F5 /* AssetLoaderDelegate.swift in Sources */,
 				FA36BD3F1BE57F8E00D5E03B /* VideoDownload.swift in Sources */,

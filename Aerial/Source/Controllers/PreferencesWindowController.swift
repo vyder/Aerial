@@ -11,35 +11,7 @@ import AVKit
 import AVFoundation
 import ScreenSaver
 
-class TimeOfDay {
-    let title: String
-    var videos: [AerialVideo] = [AerialVideo]()
-    
-    init(title: String) {
-        self.title = title
-    }
-    
-}
 
-class City {
-    var night: TimeOfDay = TimeOfDay(title: "night")
-    var day: TimeOfDay = TimeOfDay(title: "day")
-    let name: String
-    
-    init(name: String) {
-        self.name = name
-    }
-    
-    func addVideoForTimeOfDay(_ timeOfDay: String, video: AerialVideo) {
-        if timeOfDay.lowercased() == "night" {
-            video.arrayPosition = night.videos.count
-            night.videos.append(video)
-        } else {
-            video.arrayPosition = day.videos.count
-            day.videos.append(video)
-        }
-    }
-}
 
 @objc(PreferencesWindowController)
 class PreferencesWindowController: NSWindowController, NSOutlineViewDataSource,
@@ -240,7 +212,7 @@ NSOutlineViewDelegate, VideoDownloadDelegate {
             let city = cities[name]!
         
             let timeOfDay = video.timeOfDay
-            city.addVideoForTimeOfDay(timeOfDay, video: video)
+            city.add(video: video, timeOfDay: timeOfDay)
             videos.append(video)
         }
 
