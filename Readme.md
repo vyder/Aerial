@@ -1,3 +1,12 @@
+## Fork: 
+
+This fork attempts to add a preference to only play the aerial on a Mac's primary display.
+
+As of now, it plays only on the primary display, regardless of the selected preference. Must have wired the xib wrong somewhere. Will debug it another day, and make a PR for it then.
+
+---
+
+
 ![screencast](https://cloud.githubusercontent.com/assets/499192/10754100/c0e1cc4c-7c95-11e5-9d3b-842d3acc2fd5.gif)
 
 ## Aerial - Apple TV Aerial Views Screen Saver

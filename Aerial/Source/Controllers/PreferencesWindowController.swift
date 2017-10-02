@@ -48,10 +48,11 @@ NSOutlineViewDelegate, VideoDownloadDelegate {
     @IBOutlet var outlineView: NSOutlineView!
     @IBOutlet var playerView: AVPlayerView!
     @IBOutlet var differentAerialCheckbox: NSButton!
+    @IBOutlet var playOnlyOnPrimaryDisplayCheckbox: NSButton!
     @IBOutlet var projectPageLink: NSButton!
     @IBOutlet var cacheLocation: NSPathControl!
     @IBOutlet var cacheAerialsAsTheyPlayCheckbox: NSButton!
-    
+
     var player: AVPlayer = AVPlayer()
     
     var videos: [AerialVideo]?
@@ -88,6 +89,11 @@ NSOutlineViewDelegate, VideoDownloadDelegate {
         playerView.controlsStyle = .none
         if #available(OSX 10.10, *) {
             playerView.videoGravity = AVLayerVideoGravityResizeAspectFill
+        }
+
+        if preferences.playOnlyOnPrimaryDisplay {
+            playOnlyOnPrimaryDisplayCheckbox.state = NSOnState
+            differentAerialCheckbox.isEnabled = false
         }
         
         if preferences.differentAerialsOnEachDisplay {
@@ -195,6 +201,24 @@ NSOutlineViewDelegate, VideoDownloadDelegate {
         preferences.synchronize()
         
         outlineView.reloadData()
+    }
+
+    @IBAction func playOnlyOnPrimaryDisplayCheckClick(_ button: NSButton?) {
+        let state = playOnlyOnPrimaryDisplayCheckbox.state
+        let onState = (state == NSOnState)
+
+        preferences.playOnlyOnPrimaryDisplay = onState
+
+        // If only play on one display, turn off play different aerials on different displays
+        if(onState) {
+            preferences.differentAerialsOnEachDisplay = false
+            differentAerialCheckbox.isEnabled = false
+        } else {
+            // Otherwise, keep this checkbox enabled
+            differentAerialCheckbox.isEnabled = true
+        }
+
+        debugLog("set playOnlyOnPrimaryDisplay to \(onState)")
     }
     
     @IBAction func differentAerialsOnEachDisplayCheckClick(_ button: NSButton?) {

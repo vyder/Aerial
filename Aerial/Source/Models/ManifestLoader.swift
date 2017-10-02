@@ -18,7 +18,7 @@ class ManifestLoader {
     var callbacks = [manifestLoadCallback]()
     var loadedManifest = [AerialVideo]()
     var playedVideos = [AerialVideo]()
-    var offlineMode: Bool = false
+    var offlineMode: Bool = true
     
     func addCallback(_ callback:@escaping manifestLoadCallback) {
         if loadedManifest.count > 0 {

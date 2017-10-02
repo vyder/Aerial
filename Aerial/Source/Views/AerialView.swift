@@ -25,6 +25,11 @@ class AerialView: ScreenSaverView {
         let preferences = Preferences.sharedInstance
         return !preferences.differentAerialsOnEachDisplay
     }
+
+    static var onlyOnPrimaryDisplay: Bool {
+        let preferences = Preferences.sharedInstance
+        return !preferences.playOnlyOnPrimaryDisplay
+    }
     
     static var sharedViews: [AerialView] = []
     
@@ -111,6 +116,16 @@ class AerialView: ScreenSaverView {
     }
     
     func setup() {
+
+        if AerialView.onlyOnPrimaryDisplay {
+            var screens = NSScreen.screens();
+            if screens != nil && screens!.count > 0 && !self.frame.equalTo(screens![0].frame) {
+                return
+            }
+        }
+
+        NSLog("Setting up")
+
         var localPlayer: AVPlayer?
         
         let notPreview = !isPreview
@@ -191,7 +206,7 @@ class AerialView: ScreenSaverView {
         debugLog("notification: \(aNotification)")
         playNextVideo()
 
-        debugLog("playing next video for player \(player)")
+        debugLog("playing next video for player \(String(describing: player))")
     }
     
     // MARK: - Playing Videos

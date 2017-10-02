@@ -15,6 +15,7 @@ class Preferences {
     
     fileprivate enum Identifiers: String {
         case differentAerialsOnEachDisplay = "differentAerialsOnEachDisplay"
+        case playOnlyOnPrimaryDisplay = "playOnlyOnPrimaryDisplay"
         case cacheAerials = "cacheAerials"
         case customCacheDirectory = "cacheDirectory"
         case manifest = "manifest"
@@ -41,6 +42,7 @@ class Preferences {
     
     func registerDefaultValues() {
         var defaultValues = [Identifiers: Any]()
+        defaultValues[.playOnlyOnPrimaryDisplay] = false
         defaultValues[.differentAerialsOnEachDisplay] = false
         defaultValues[.cacheAerials] = true
         
@@ -65,7 +67,17 @@ class Preferences {
                          value: newValue)
         }
     }
-    
+
+    var playOnlyOnPrimaryDisplay: Bool {
+        get {
+            return value(forIdentifier: .playOnlyOnPrimaryDisplay)
+        }
+        set {
+            setValue(forIdentifier: .playOnlyOnPrimaryDisplay,
+                     value: newValue)
+        }
+    }
+
     var cacheAerials: Bool {
         get {
             return value(forIdentifier: .cacheAerials)
